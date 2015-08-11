@@ -1,1 +1,214 @@
-<h1> Hello World </h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- set viewport to device width to allow responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- Autocomplete CDN -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css">
+
+    <!-- link to stylesheet (always require after Bootstrap) -->
+
+    <link rel="stylesheet" type="text/css" href="/style.css">
+
+
+	
+	
+	
+	<title>Startup Ninja</title>
+
+
+	
+	<!-- Social Tags -->
+	<title>Startup Ninja</title>
+	<meta name="description" content="This app will help you brainstorm ideas for your next billion dollar startup!" />
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" value="Check out this awesome AI driven Startup Idea generator. 1000+ ideas!">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="World's largest startup idea database" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://startupideas.bitballoon.com/" />
+	<meta property="og:image" content="https://i.imgur.com/EO1uCoe.png" />
+	<meta property="og:description" content="This app will help you brainstorm ideas for your next billion dollar startup. Check out the 1000+ ideas!" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/EO1uCoet.png" />
+</head>
+<body>
+
+
+<div class = "container-fluid" id = "playscreen">
+	
+
+
+	<!-- <div class ="row"> -->
+  		<div id = "left" class="col-sm-5">
+       		
+       		<h1 id = "company"></h1>
+       		
+       	</div>
+    <!-- </div> -->
+     
+
+     <!-- <div class ="row"> -->
+       	<div id = "middle" class="col-sm-2">
+      		
+       		<h1 id = "for">for</h1>
+       		
+
+    		
+       		
+    	<!-- </div> -->
+    </div>
+
+    <!-- <div class ="row"> -->
+       	<div id = "right" class="col-sm-5">
+       <!-- <h1 id = "butfor"> for </h1> -->
+       		<h1 id = "market"></h1>
+    	</div>
+    <!-- </div> -->
+
+</div>
+
+<div class = "container-fluid" id = "voting">
+	  <div  class = "col-xs-6">
+                            
+
+				<button id = "hate" type="submit" class="btn btn-hot text-uppercase btn-lg" data-id="55c030bc792c71104f3e5cd3" >
+                HATE IT</button>
+         
+    </div>  
+	<div  class = "col-xs-6">
+    			
+				<button id = "love" type="submit" class="btn btn-fresh text-uppercase btn-lg" data-id="55c030bc792c71104f3e5cd3">Love it
+                </button>
+     </div>
+   
+
+</div>
+   
+ 
+
+
+                    
+  
+
+<!-- Search form -->
+<div class = "container-fluid" id = "searchscreen">
+	
+<h2> Top Trending </h2>
+	<div class="row">
+        
+    		
+	   <!--   <form class='form-group' id='submit-search'>
+	        <div class="col-sm-8">
+	            	<input id = "autocomplete" type="text" class="form-control input-lg" placeholder="Search for company or market segment" />
+	    	</div>        	
+	    	<div class="col-sm-4">        		
+	         	<button id = "search" class="btn btn-sky text-uppercase btn-lg" type="submit">Search
+	          	
+	         </button>
+	    	</div>
+	                
+	      </form>
+        </div> -->
+	
+	<div id="results">
+		<div class = "container-fluid">
+       <div id = "topidea" class="col-xs-10">   
+         Idea
+       </div 
+
+       <div id = "topideascore"class="col-xs-2">
+            Score     
+       </div>
+
+	</div>
+
+	</div>
+</div>
+
+
+
+<script type="text/template" id="resultsTemplate">
+<hr>
+	<div class = "container-fluid">
+       <div id = "topidea" class="col-xs-10">   
+         <%=counter%>. <%= company %> for <%= market %> 
+       </div 
+
+       <div id = "topideascore"class="col-xs-2">
+           <%= score %>      
+       </div>
+
+	</div>
+
+
+</script>
+
+<!-- Screen that allows user to post an idea -->
+
+
+<div class="container-fluid" id = 'submitscreen'>
+
+<div class="col-sm-6">
+		<h2>Post Your Idea</h2> 
+		<div class="form-area">  
+			<form id = "new-idea" role="form">
+				<br style="clear:both">
+
+				<div class="form-group">
+					<input type="text" class="form-control" id="submitcompany" name="company" placeholder="e.g. Uber, Facebook, Google Docs, etc" required maxlength="30" >
+				</div>
+				<p style="text-align: center"> for
+					<div class="form-group">
+						<input type="text" class="form-control" id="submitmarket" name="market" placeholder="e.g. senior citizens, organic farming, etc." required maxlength="30">
+					</div>
+
+					<button type="button" id="submitidea" name="submitidea" class="btn btn-fresh text-uppercase btn-lg">Submit</button>
+				</form>
+			</div>
+
+		</div>
+
+	</div> 
+
+
+
+
+
+
+
+<!-- link to jquery file -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+	
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+
+	<!-- underscore -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+
+
+	<!-- link to javascript file -->
+
+	<script src="/scripts.js"></script> 
+
+
+
+</body>
+</html>
+
+
