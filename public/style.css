@@ -19,14 +19,14 @@ body {
     }
     h1 {
     
-       font-size: 40px;
+       font-size: 50px;
         margin: 0px!important;
         padding-top: 225px!important;
 
     }
 
     #for {
-        font-size: 40px;
+        font-size: 50px;
         margin: 0px!important;
         padding-top: 225px!important;
         color: white;
@@ -38,7 +38,7 @@ body {
     
     /*background-color: #2982C9;*/
      /*background-color: #EB4924;*/
-    height: 525px;
+    height: 625px;
     text-align: center;
     color: white;
     font-family: 'Quattrocento Sans', sans-serif;
@@ -48,7 +48,7 @@ body {
     #middle {
     
     background-color: white;
-    height: 525px;
+    height: 625px;
     text-align: center;
     color: white;
 
@@ -60,7 +60,7 @@ body {
  
     /*background-color: #2982C9;*/
     /*background-color: black;*/
-    height: 525px;
+    height: 625px;
     text-align: center;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
@@ -70,7 +70,7 @@ body {
 
     #voting {
       background-color: black; 
-      height: 100px;
+      height: 125px;
       padding-bottom: 20px;
       text-align: center;
  

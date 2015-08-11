@@ -90,7 +90,7 @@ console.log(randomColor2);
   _.each(ideas, function(idea) {
    // console.log(idea);
    counter ++;
-   ideaData = {company: idea.company, market: idea.market, score: idea.score, counter};
+   ideaData = {company: idea.company, market: idea.market, score: idea.score, counter: counter};
    console.log(ideaData);
    var $result = $(_results(ideaData))
    $results.append($result);
