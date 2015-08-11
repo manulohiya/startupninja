@@ -1,0 +1,11 @@
+{
+  "name": "startupninja",
+  "version": "1.0.0",
+  "description": "A place to find startup ideas",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manu Lohiya",
+  "license": "MIT"
+}
