@@ -1,5 +1,6 @@
 // wait for the DOM to finish loading
-window.addEventListener('DOMContentLoaded', function(event) {
+// window.addEventListener('DOMContentLoaded', function(event) {
+ $(function(){
   console.log("DOM fully loaded and parsed");
 
   var timeout = 1000;
