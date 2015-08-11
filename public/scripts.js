@@ -46,7 +46,7 @@ function shuffle(array) {
 
 //Random background color picker
 var background1 = ["#1abc9c", "#2ecc71", "#3498db","#9b59b6","#34495e", "#16a085","#27ae60","#2980b9","#8e44ad","#2c3e50", "#A0D468", "#8CC152", "#4FC1E9", "#3BAFDA", "#3BAFDA", "#5D9CEC", "#4A89DC", "#AC92EC", "#967ADC"];
-var background2 = ["#EC87C0", "#D770AD", "#f1c40f", "#e67e22", "#e74c3c", "#f39c12","#d35400", "#c0392b", "#ED5565","#DA4453", "#FC6E51", "#E9573F"];  
+var background2 = ["#EC87C0", "#D770AD", "#e67e22", "#e74c3c", "#f39c12","#d35400", "#c0392b", "#ED5565","#DA4453", "#FC6E51", "#E9573F"];  
 
 randomColor1 = shuffle(background1);
 randomColor2 = shuffle(background2);
