@@ -19,14 +19,14 @@ body {
     }
     h1 {
     
-       font-size: 50px;
+       font-size: 72px;
         margin: 0px!important;
         padding-top: 225px!important;
 
     }
 
     #for {
-        font-size: 50px;
+        font-size: 72px;
         margin: 0px!important;
         padding-top: 225px!important;
         color: white;
@@ -71,20 +71,23 @@ body {
     #voting {
       background-color: black; 
       height: 125px;
-      padding-bottom: 20px;
+      padding-bottom: 30px;
       text-align: center;
+
  
     }
 
     #love {
-        padding: 20px;
-        margin-left: 20px;
+        padding: 25px;
+        margin-left: 30px;
+         font-size: 24px;
        
     }
 
     #hate {
-        padding: 20px;
+        padding: 25px;
         margin-left: 400px;
+         font-size: 24px;
         
     }
 
