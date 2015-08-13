@@ -11,8 +11,8 @@
   "dependencies": {
     "body-parser": "^1.13.3",
     "cors": "^2.7.1",
-    
     "express": "^4.13.3",
+    "mongo-migrate": "^0.1.0",
     "mongoose": "^4.1.2",
     "underscore": "^1.8.3",
     "underscore.string": "^3.1.1"
