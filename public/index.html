@@ -4,22 +4,22 @@
 	<meta charset="utf-8">
 
 	<!-- set viewport to device width to allow responsiveness -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	
 	<!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <!-- fonts -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<!-- fonts -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-    <!-- Autocomplete CDN -->
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css">
+	<!-- Autocomplete CDN -->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css">
 
-    <!-- link to stylesheet (always require after Bootstrap) -->
+	<!-- link to stylesheet (always require after Bootstrap) -->
 
-    <link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="/style.css">
 
 
 	
@@ -41,7 +41,7 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="https://startupninja.herokuapp.com" />
 	<meta property="og:image" content="https://i.imgur.com/ChHuMrb.png" />
-	<meta property="og:description" content="This app will help you brainstorm ideas for your next startup. Check out the 2000+ ideas!" />
+	<meta property="og:description" content="This app will help you brainstorm ideas for your next startup. Get inspired, vote, and submit your own!" />
 	<link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/ChHuMrbs.png" />
 </head>
 <body>
@@ -50,74 +50,91 @@
 
 
 
-<div class = "container-fluid" id = "playscreen">
+	<div class = "container-fluid" id = "playscreen">
 
 
 
 
-	<!-- <div class ="row"> -->
-  		<div id = "left" class="col-sm-5">
-       		
-       		<h1 id = "company"></h1>
-       		
-       	</div>
-    <!-- </div> -->
-     
+		<!-- <div class ="row"> -->
+		<div id = "left" class="col-sm-5">
 
-     <!-- <div class ="row"> -->
-       	<div id = "middle" class="col-sm-2">
-      		
+			<h1 id = "company"></h1>
 
-       		<h1 id = "for">for</h1>
-       		
+		</div>
+		<!-- </div> -->
 
-    		
-       		
-    	<!-- </div> -->
-    </div>
 
-    <!-- <div class ="row"> -->
-       	<div id = "right" class="col-sm-5">
+		<!-- <div class ="row"> -->
+		<div id = "middle" class="col-sm-2">
 
-       <!-- <h1 id = "butfor"> for </h1> -->
-       		<h1 id = "market"></h1>
-    	</div>
-    <!-- </div> -->
 
-</div>
+			<h1 id = "for">for</h1>
 
-<div class = "container-fluid" id = "voting">
- 		
-	<div  class = "col-xs-3 col-xs-offset-1">
-                            
 
-				<button id = "hate" type="submit" class="btn btn-danger" data-id="55c030bc792c71104f3e5cd3" >
-               DON'T GET IT</button>
-         
-    </div>
-    
-	<div  class = "col-xs-3 col-xs-offset-2">
-    			
+
+
+			<!-- </div> -->
+		</div>
+
+		<!-- <div class ="row"> -->
+		<div id = "right" class="col-sm-5">
+
+			<!-- <h1 id = "butfor"> for </h1> -->
+			<h1 id = "market"></h1>
+		</div>
+		<!-- </div> -->
+
+	</div>
+
+	<div class = "container-fluid" id = "voting">
+
+		<div  class = "col-xs-3 col-xs-offset-1">
+
+
+			<button id = "hate" type="submit" class="btn btn-danger" data-id="55c030bc792c71104f3e5cd3" >
+				DON'T GET IT</button>
+
+		</div>
+
+		<div  class = "col-xs-3 col-xs-offset-2">
+
 				<button id = "love" type="submit" class="btn btn-success" data-id="55c030bc792c71104f3e5cd3">YES, LOVE IT
-                </button>
-     </div>
-   
+				</button>
+		</div>
+	</div>
 
-</div>
-   
- 
+	<!-- Social -->
+	<div id = "social">
+			<!-- twitter button + redirect to twitter page -->
+			<span>
+			<div id = "twitter" class = "col-xs-1 col-xs-offset-9">
+			
+			<a href="https://twitter.com/share" class="twitter-share-button" data-text="A curated collection of top startup ideas. 2000+ ideas!" data-via="manu_lohiya">Tweet</a>
+
+			</div>
+
+			<!-- Facebook -->
+			<!-- <div id="fb-root" class = "col-sm-4"></div> -->
+				<div id = "facebook" class="fb-share-button" data-href="https://startupninja.herokuapp.com/" data-layout="button_count">
+
+				</div>
+			<!-- </div> -->
+					<!-- Github fork button link -->
+			<div id = "github" class = "col-xs-1">
+				<a class="github-button" href="https://github.com/manulohiya/startupninja" data-icon="octicon-git-branch" data-style="mega" data-count-href="/ntkme/github-buttons/network" data-count-api="/repos/ntkme/github-buttons#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork ntkme/github-buttons on GitHub">Fork</a>
+			</div>	
+			</span>
+
+	</div>
 
 
-                    
-  
+				<!-- Search form -->
+				<div class = "container-fluid" id = "searchscreen">
 
-<!-- Search form -->
-<div class = "container-fluid" id = "searchscreen">
-	
-<h2> Top Trending </h2>
-	<div class="row">
-        
-    		
+					<h2> Top Trending </h2>
+					<div class="row">
+
+
 	   <!--   <form class='form-group' id='submit-search'>
 	        <div class="col-sm-8">
 	            	<input id = "autocomplete" type="text" class="form-control input-lg" placeholder="Search for company or market segment" />
@@ -129,105 +146,121 @@
 	    	</div>
 	                
 	      </form>
-        </div> -->
-	
-	<div id="results">
-		<div class = "container-fluid">
-       <div id = "topidea" class="col-xs-10">   
-         Idea
-       </div 
+	  </div> -->
 
-       <div id = "topideascore"class="col-xs-2">
-            Score     
-       </div>
+	  <div id="results">
+	  	<div class = "container-fluid">
+	  		<div id = "topidea" class="col-xs-10">   
+	  			Idea
+	  			</div 
 
-	</div>
+	  			<div id = "topideascore"class="col-xs-2">
+	  				Score     
+	  			</div>
 
-	</div>
-</div>
+	  		</div>
 
-
-
-<script type="text/template" id="resultsTemplate">
-<hr>
-	<div class = "container-fluid">
-       <div id = "topidea" class="col-xs-10">   
-         <%=counter%>. <%= company %> for <%= market %> 
-       </div 
-
-       <div id = "topideascore"class="col-xs-2">
-           <%= score %>      
-       </div>
-
-	</div>
-
-
-</script>
-
-<!-- Screen that allows user to post an idea -->
-
-
-<div class="container-fluid" id = 'submitscreen'>
-
-<div class="col-sm-6">
-		<h2>Post Your Idea</h2> 
-		<div class="form-area">  
-			<form id = "new-idea" role="form">
-				<br style="clear:both">
-
-				<div class="form-group">
-					<input type="text" class="form-control" id="submitcompany" name="company" placeholder="e.g. Uber, Facebook, Google Docs, etc" required maxlength="30" >
-				</div>
-				<p style="text-align: center"> for
-					<div class="form-group">
-						<input type="text" class="form-control" id="submitmarket" name="market" placeholder="e.g. senior citizens, organic farming, etc." required maxlength="30">
-					</div>
-
-					<button type="button" id="submitidea" name="submitidea" class="btn btn-success">Submit</button>
-				</form>
-			</div>
-
-		</div>
-
-	 	
-	</div> 
+	  	</div>
 
 
 
-<!-- Google Analytics -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-64574814-4', 'auto');
-  ga('send', 'pageview');
-
-</script>
+	  </div>
 
 
 
-<!-- link to jquery file -->
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	  <script type="text/template" id="resultsTemplate">
+	  	<hr>
+	  	<div class = "container-fluid">
+	  		<div id = "topidea" class="col-xs-10">   
+	  			<%=counter%>. <%= company %> for <%= market %> 
+	  			</div 
 
-	
+	  			<div id = "topideascore"class="col-xs-2">
+	  				<%= score %>      
+	  			</div>
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
-
-	<!-- underscore -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-
-
-
-	<!-- link to javascript file -->
-
-	<script src="/scripts.js"></script> 
+	  		</div>
 
 
+	  	</script>
 
-</body>
-</html>
+	  	<!-- Screen that allows user to post an idea -->
+
+
+	  	<div class="container-fluid" id = 'submitscreen'>
+
+	  		<div class="col-sm-6">
+	  			<h2>Post Your Idea</h2> 
+	  			<div class="form-area">  
+	  				<form id = "new-idea" role="form">
+	  					<br style="clear:both">
+
+	  					<div class="form-group">
+	  						<input type="text" class="form-control" id="submitcompany" name="company" placeholder="e.g. Uber, Facebook, Google Docs, etc" required maxlength="30" >
+	  					</div>
+	  					<p style="text-align: center"> for
+	  						<div class="form-group">
+	  							<input type="text" class="form-control" id="submitmarket" name="market" placeholder="e.g. senior citizens, organic farming, etc." required maxlength="30">
+	  						</div>
+
+	  						<button type="button" id="submitidea" name="submitidea" class="btn btn-success">Submit</button>
+	  					</form>
+	  				</div>
+
+	  			</div>
+
+
+	  		</div> 
+
+
+
+	  		<!-- Google Analytics -->
+	  		<script>
+	  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  			ga('create', 'UA-64574814-4', 'auto');
+	  			ga('send', 'pageview');
+
+	  		</script>
+
+
+
+	  		<!-- link to jquery file -->
+	  		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+
+	  		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	  		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+
+	  		<!-- underscore -->
+	  		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+	  		<!-- Twitter JS -->
+	  		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+	  		<!-- Facebook JS -->
+	  		<script>(function(d, s, id) {
+	  			var js, fjs = d.getElementsByTagName(s)[0];
+	  			if (d.getElementById(id)) return;
+	  			js = d.createElement(s); js.id = id;
+	  			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=80860984538";
+	  			fjs.parentNode.insertBefore(js, fjs);
+	  		}(document, 'script', 'facebook-jssdk'));</script>
+
+	  		<!-- Github -->
+	  		<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+
+	  		<!-- link to javascript file -->
+
+	  		<script src="/scripts.js"></script> 
+
+
+
+	  	</body>
+	  	</html>
 
 
